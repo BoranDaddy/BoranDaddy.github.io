@@ -1690,6 +1690,49 @@ pre .javascript .function {
 .fancybox-close:hover {
   border: none;
 }
+#reward-container {
+  padding: 10px 0;
+  margin: 20px auto;
+  width: 90%;
+  text-align: center;
+}
+#reward-button {
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  display: inline-block;
+  vertical-align: text-top;
+  margin: 0;
+  padding: 0 15px;
+  border-radius: 5px;
+  height: 32px;
+  line-height: 32px;
+  font-size: 16px;
+  color: #fff;
+  background: #f44336;
+  letter-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+}
+#reward-button span:hover {
+  background: #f7877f;
+}
+#qr {
+  padding-top: 20px;
+}
+#qr a {
+  border: 0;
+}
+#qr img {
+  width: 180px;
+  max-width: 100%;
+  display: inline-block;
+  margin: 0.8em 2em 0 2em;
+}
+#qr p {
+  text-align: center;
+}
 .post-copyright {
   margin: 2em 0 0;
   padding: 0.5em 1em;
@@ -1895,7 +1938,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #2fe3f5;
+  background: #20094e;
 }
 .feed-link,
 .chat {
@@ -2150,6 +2193,9 @@ pre .javascript .function {
     transform: scale(1.1);
   }
 }
+i.fa {
+  font-family: FontAwesome !important;
+}
 .local-search-pop-overlay {
   position: fixed;
   width: 100%;
@@ -2256,6 +2302,29 @@ pre .javascript .function {
   transform: translate(-50%, -50%);
   color: #ccc;
 }
+#needsharebutton-postbottom {
+  position: relative;
+  cursor: pointer;
+  height: 26px;
+}
+#needsharebutton-postbottom .btn {
+  display: initial;
+  padding: 1px 4px;
+  border: 1px solid #555;
+  border-radius: 3px;
+}
+#needsharebutton-float {
+  position: fixed;
+  bottom: 38px;
+  left: -8px;
+  z-index: 9999;
+  cursor: pointer;
+}
+#needsharebutton-float .btn {
+  padding: 0 10px 0 14px;
+  border: 1px solid #555;
+  border-radius: 4px;
+}
 .copy-btn {
   display: inline-block;
   padding: 6px 12px;
@@ -2266,10 +2335,8 @@ pre .javascript .function {
   white-space: nowrap;
   vertical-align: middle;
   cursor: pointer;
-  background-color: #eee;
-  background-image: linear-gradient(#fcfcfc, #eee);
-  border: 1px solid #d5d5d5;
-  border-radius: 3px;
+  background-color: #fff;
+  border: none;
   user-select: none;
   outline: 0;
 }
@@ -2278,8 +2345,8 @@ pre .javascript .function {
   opacity: 0;
   padding: 2px 6px;
   position: absolute;
-  right: 4px;
-  top: 8px;
+  right: 0px;
+  height: 42px;
 }
 .highlight-wrap:hover .copy-btn,
 .highlight-wrap .copy-btn:focus {
@@ -2287,6 +2354,10 @@ pre .javascript .function {
 }
 .highlight-wrap {
   position: relative;
+}
+.has-jax {
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 .page-archive .archive-page-counter {
   position: relative;
